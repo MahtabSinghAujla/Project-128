@@ -11,7 +11,7 @@ temp_list= []
 
 rows = star_table[4].find_all('tr')
 
-for tr in table_rows :
+for tr in rows :
     td = tr.find_all('td')
     row = [i.text.rstrip() for i in td]
     temp_list.append(row)
